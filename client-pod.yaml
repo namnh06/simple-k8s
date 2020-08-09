@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-    name: client-pod
-    labels:
-        component: web
+  name: client-pod
+  labels:
+    component: web
 spec:
-    containers:
-        - name: client
-            image: namnh06/multi-client
-            ports:
-                - containerPort: 3000
+  containers:
+    - name: client
+      image: namnh06/multi-worker
+      ports:
+        - containerPort: 3000
